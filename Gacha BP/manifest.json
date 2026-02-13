@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Gacha System",
+        "description": "-",
+        "uuid": "97dd9ee4-9102-4d2f-b81f-c9764c94d82e",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "Darkness9373"
+        ]
+    },
+    "modules": [
+        {
+            "description": "-",
+            "type": "script",
+            "language": "javascript",
+            "entry": "scripts/main.js",
+            "uuid": "80b272cf-f666-44fd-8b30-0128c98e5224",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.5.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
+        }
+    ]
+}

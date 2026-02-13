@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Gacha System",
+        "description": "-",
+        "uuid": "02dc5cf8-7388-475b-add4-c56042e56b77",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "Darkness9373"
+        ]
+    },
+    "modules": [
+        {
+            "description": "-",
+            "type": "resources",
+            "uuid": "c791f1c6-fffc-4cd6-974a-1c62bdb4911a",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

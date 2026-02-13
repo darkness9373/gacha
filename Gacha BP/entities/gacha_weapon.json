@@ -1,0 +1,88 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "drk:gacha_weapon",
+            "is_summonable": true,
+            "is_spawnable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 99,
+                "max": 99
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": "no"
+                    }
+                ]
+            },
+            "minecraft:nameable": {
+                "allow_name_tag_renaming": true,
+                "always_show": true
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/empty.json"
+            },
+            "minecraft:behavior.look_at_player": {
+                "angle_of_view_vertical": 0,
+                "angle_of_view_horizontal": 0,
+                "look_distance": 0,
+                "probability": 0,
+                "target_distance": 0
+            },
+            "minecraft:movement": {
+                "value": 0,
+                "max": 0
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "height": 8,
+                "width": 8
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "on_interact": {
+                            "filters": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "player",
+                                    "domain": "hand",
+                                    "operator": "==",
+                                    "value": "minecraft:barrier"
+                                }
+                            ],
+                            "target": "self",
+                            "event": "despawn"
+                        },
+                        "use_item": false
+                    }
+                ]
+            }
+        },
+        "events": {
+            "remove": {
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
+            }
+        }
+    }
+}
