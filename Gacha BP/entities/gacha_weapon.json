@@ -17,6 +17,9 @@
                 "value": 99,
                 "max": 99
             },
+            "minecraft:type_family": {
+                "family": ["gacha"]
+            },
             "minecraft:damage_sensor": {
                 "triggers": [
                     {
