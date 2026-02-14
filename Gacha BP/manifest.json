@@ -25,13 +25,13 @@
             "description": "-",
             "type": "script",
             "language": "javascript",
-            "entry": "scripts/main.js",
             "uuid": "80b272cf-f666-44fd-8b30-0128c98e5224",
             "version": [
                 1,
                 0,
                 0
-            ]
+            ],
+            "entry": "scripts/main.js"
         }
     ],
     "dependencies": [
