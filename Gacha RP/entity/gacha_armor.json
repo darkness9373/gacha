@@ -2,15 +2,15 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "drk:gacha_weapon",
+            "identifier": "drk:gacha_armor",
             "materials": {
                 "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/chest/chest1"
+                "default": "textures/chest/chest2"
             },
             "geometry": {
-                "default": "geometry.chest1"
+                "default": "geometry.chest2"
             },
             "render_controllers": [
                 "controller.render.chest_custom"
