@@ -11,3 +11,4 @@ import './armor/steel'
 import './armor/straw'
 
 import './spawn'
+import './set'

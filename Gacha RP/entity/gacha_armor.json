@@ -14,7 +14,11 @@
             },
             "render_controllers": [
                 "controller.render.chest_custom"
-            ]
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 35
+            }
         }
     }
 }

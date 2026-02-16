@@ -22,11 +22,10 @@
             },
             "minecraft:damage_sensor": {
                 "triggers": [
-                    {
-                        "cause": "all",
-                        "deals_damage": "no"
-                    }
-                ]
+                {
+                    "cause": "all",
+                    "deals_damage": "no"
+                }]
             },
             "minecraft:nameable": {
                 "allow_name_tag_renaming": true,
@@ -34,13 +33,6 @@
             },
             "minecraft:loot": {
                 "table": "loot_tables/empty.json"
-            },
-            "minecraft:behavior.look_at_player": {
-                "angle_of_view_vertical": 0,
-                "angle_of_view_horizontal": 0,
-                "look_distance": 0,
-                "probability": 0,
-                "target_distance": 0
             },
             "minecraft:movement": {
                 "value": 0,
@@ -51,31 +43,34 @@
                 "is_pushable_by_piston": false
             },
             "minecraft:collision_box": {
-                "height": 8,
-                "width": 8
+                "height": 1,
+                "width": 1
             },
             "minecraft:physics": {
                 "has_gravity": false
             },
             "minecraft:interact": {
                 "interactions": [
-                    {
-                        "on_interact": {
-                            "filters": [
-                                {
-                                    "test": "has_equipment",
-                                    "subject": "player",
-                                    "domain": "hand",
-                                    "operator": "==",
-                                    "value": "minecraft:barrier"
-                                }
-                            ],
-                            "target": "self",
-                            "event": "despawn"
+                {
+                    "on_interact": {
+                        "filters": {
+                            "any_of": [
+                            {
+                                "test": "has_equipment",
+                                "domain": "hand",
+                                "subject": "other",
+                                "value": "barrier"
+                            }]
                         },
-                        "use_item": false
-                    }
-                ]
+                        "target": "self",
+                        "event": "despawn"
+                    },
+                    "use_item": false,
+                    "interact_text": "Remove Chest"
+                }]
+            },
+            "minecraft:scale": {
+                "value": 1.5
             }
         },
         "events": {

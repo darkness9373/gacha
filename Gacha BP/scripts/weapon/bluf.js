@@ -72,10 +72,12 @@ function rollOne() {
 function runRollEffect(player, callback) {
     
     // slow biar dramatis
-    player.runCommand("effect @s slowness 4 4 true");
-    
+    player.runCommand("effect @s slowness 3 4 true");
+    player.runCommand('playSound custom.gacha @s')
     // particle awal
     player.runCommand("particle minecraft:portal ~ ~1 ~");
+    
+    
     
     let tick = 0;
     
@@ -89,12 +91,7 @@ function runRollEffect(player, callback) {
             `§eRolling... §7${fake}`
         );
         
-        player.playSound("block.enchanting_table.use", {
-            volume: 0.9,
-            pitch: 1
-        });
-        
-        if (tick > 40) {
+        if (tick > 30) {
             system.clearRun(loop);
             callback();
         }
@@ -115,7 +112,7 @@ function giveReward(player, item) {
     
     player.playSound("random.orb", {
         volume: 1,
-        pitch: 1.2
+        pitch: 1
     });
     
     if (item.legend) {

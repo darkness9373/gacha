@@ -21,27 +21,33 @@
         ]
     },
     "modules": [
-        {
-            "description": "-",
-            "type": "script",
-            "language": "javascript",
-            "uuid": "80b272cf-f666-44fd-8b30-0128c98e5224",
-            "version": [
-                1,
-                0,
-                0
-            ],
-            "entry": "scripts/main.js"
-        }
-    ],
+    {
+        "description": "-",
+        "type": "script",
+        "language": "javascript",
+        "uuid": "80b272cf-f666-44fd-8b30-0128c98e5224",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "entry": "scripts/main.js"
+    }],
     "dependencies": [
-        {
-            "module_name": "@minecraft/server",
-            "version": "2.5.0"
-        },
-        {
-            "module_name": "@minecraft/server-ui",
-            "version": "2.0.0"
-        }
-    ]
+    {
+        "uuid": "02dc5cf8-7388-475b-add4-c56042e56b77",
+        "version": [1, 0, 0]
+    },
+    {
+        "uuid": "1a951f78-1647-420f-b3f6-87fe1eab7363",
+        "version": [1, 0, 0]
+    },
+    {
+        "module_name": "@minecraft/server",
+        "version": "2.5.0"
+    },
+    {
+        "module_name": "@minecraft/server-ui",
+        "version": "2.0.0"
+    }]
 }

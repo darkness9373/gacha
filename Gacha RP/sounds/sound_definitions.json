@@ -1,0 +1,14 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"random.orb": {
+			"__use_legacy_max_distance": "false",
+			"category": "player",
+			"max_distance": null,
+			"min_distance": null,
+			"sounds": [
+				"sounds/gacha"
+			]
+		}
+	}
+}

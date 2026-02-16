@@ -70,9 +70,11 @@ function runRollEffect(player, callback) {
     
     // slow biar dramatis
     player.runCommand("effect @s slowness 4 4 true");
-    
+    player.runCommand('playSound custom.gacha @s')
     // particle awal
     player.runCommand("particle minecraft:portal ~ ~1 ~");
+    
+    
     
     let tick = 0;
     
@@ -86,12 +88,7 @@ function runRollEffect(player, callback) {
             `§eRolling... §7${fake}`
         );
         
-        player.playSound("block.enchanting_table.use", {
-            volume: 0.9,
-            pitch: 1
-        });
-        
-        if (tick > 40) {
+        if (tick > 30) {
             system.clearRun(loop);
             callback();
         }
@@ -160,7 +157,7 @@ function doGacha(player, count) {
 /* ================= FORM ================= */
 
 function openChest(player) {
-    
+    const gold = Score.get(player, 'gold') ?? 0
     const form = new ActionFormData()
         .title("Gacha Shadow Kunai")
         .body(`Gold : ${gold}\n\n` + crateBody.join("\n"))
