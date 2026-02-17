@@ -5,20 +5,20 @@ import OpenUI from '../extension/OpenUI';
 
 /* ================= CONFIG ================= */
 
-const GACHA_PRICE = 2000;
+const GACHA_PRICE = 750;
 
 const crateBody = [
     "Rate:",
-    " - 1 Blue Flame Dragon : 3%",
-    " - 1 Shulker Box : 5%",
-    " - 1 Trident : 6%",
-    " - 1 Diamond Spear : 7%",
-    " - 1 Diamond Sword : 9%",
-    " - 1 Golden Sword : 11%",
-    " - 1 Iron Sword : 13%",
-    " - 1 Stone Sword : 14%",
-    " - 1 Copper Sword : 15%",
-    " - 10 Golden Apple : 17%"
+    " - 1 Blue Flame Dragon : 3\%",
+    " - 1 Shulker Box : 5\%",
+    " - 1 Trident : 6\%",
+    " - 1 Diamond Spear : 7\%",
+    " - 1 Diamond Sword : 9\%",
+    " - 1 Golden Sword : 11\%",
+    " - 1 Iron Sword : 13\%",
+    " - 1 Stone Sword : 14\%",
+    " - 1 Copper Sword : 15\%",
+    " - 10 Golden Apple : 17\%"
 ];
 
 /* ================= ITEM LIST ================= */

@@ -5,24 +5,24 @@ import OpenUI from '../extension/OpenUI';
 
 /* ================= CONFIG ================= */
 
-const GACHA_PRICE = 2000;
+const GACHA_PRICE = 750;
 
 const crateBody = [
     "Rate:",
-    " - Straw Hat : 5%",
-    " - Shulker Box : 5%",
-    " - Diamond Helmet : 7%",
-    " - Diamond Chestplate : 6%",
-    " - Diamond Leggings : 6%",
-    " - Diamond Boots : 7%",
-    " - Iron Helmet : 7%",
-    " - Iron Chestplate : 7%",
-    " - Iron Leggings : 7%",
-    " - Iron Boots : 7%",
-    " - Chainmail Helmet : 9%",
-    " - Chainmail Chestplate : 9%",
-    " - Chainmail Leggings : 9%",
-    " - Chainmail Boots : 9%",
+    " - Straw Hat : 5\%",
+    " - Shulker Box : 5\%",
+    " - Diamond Helmet : 7\%",
+    " - Diamond Chestplate : 6\%",
+    " - Diamond Leggings : 6\%",
+    " - Diamond Boots : 7\%",
+    " - Iron Helmet : 7\%",
+    " - Iron Chestplate : 7\%",
+    " - Iron Leggings : 7\%",
+    " - Iron Boots : 7\%",
+    " - Chainmail Helmet : 9\%",
+    " - Chainmail Chestplate : 9\%",
+    " - Chainmail Leggings : 9\%",
+    " - Chainmail Boots : 9\%",
 ];
 
 /* ================= ITEM LIST ================= */

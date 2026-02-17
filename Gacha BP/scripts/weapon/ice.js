@@ -5,19 +5,19 @@ import OpenUI from '../extension/OpenUI';
 
 /* ================= CONFIG ================= */
 
-const GACHA_PRICE = 2000;
+const GACHA_PRICE = 750;
 
 const crateBody = [
     "Rate:",
-    " - 1 Ice Bow : 2%",
-    " - 1 Shulker Box : 5%",
-    " - 1 Trident : 7%",
-    " - 1 Diamond Spear : 8%",
-    " - 1 Diamond Sword : 10%",
-    " - 1 Golden Sword : 12%",
-    " - 1 Iron Sword : 15%",
-    " - 1 Stone Sword : 18%",
-    " - 1 Copper Sword : 23%"
+    " - 1 Ice Bow : 2\%",
+    " - 1 Shulker Box : 5\%",
+    " - 1 Trident : 7\%",
+    " - 1 Diamond Spear : 8\%",
+    " - 1 Diamond Sword : 10\%",
+    " - 1 Golden Sword : 12\%",
+    " - 1 Iron Sword : 15\%",
+    " - 1 Stone Sword : 18\%",
+    " - 1 Copper Sword : 23\%"
 ];
 
 /* ================= ITEM LIST ================= */
@@ -154,7 +154,7 @@ function doGacha(player, count) {
 function openChest(player) {
     const gold = Score.get(player, 'gold') ?? 0
     const form = new ActionFormData()
-        .title("Gacha Shadow Kunai")
+        .title("Gacha Ice Bow")
         .body(`Gold : ${gold}\n\n` + crateBody.join("\n"))
         .button(`1× Gacha\n§6${getPrice(1)} Gold`)
         .button(`5× Gacha\n§6${getPrice(5)} Gold`)
