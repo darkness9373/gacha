@@ -110,13 +110,8 @@ function giveReward(player, item) {
         "particle minecraft:totem_particle ~ ~1 ~"
     );
     
-    player.playSound("random.orb", {
-        volume: 1,
-        pitch: 1
-    });
-    
     if (item.legend) {
-        player.playSound("ui.toast.challenge_complete", {
+        player.playSound("random.toast", {
             volume: 1,
             pitch: 1
         });

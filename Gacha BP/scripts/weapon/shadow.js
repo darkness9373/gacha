@@ -72,7 +72,7 @@ function rollOne() {
 function runRollEffect(player, callback) {
     
     // slow biar dramatis
-    player.runCommand("effect @s slowness 4 4 true");
+    player.runCommand("effect @s slowness 3 4 true");
     player.runCommand('playSound custom.gacha @s')
     // particle awal
     player.runCommand("particle minecraft:portal ~ ~1 ~");
@@ -109,13 +109,8 @@ function giveReward(player, item) {
         "particle minecraft:totem_particle ~ ~1 ~"
     );
     
-    player.playSound("random.orb", {
-        volume: 1,
-        pitch: 1.2
-    });
-    
     if (item.legend) {
-        player.playSound("ui.toast.challenge_complete", {
+        player.playSound("random.toast", {
             volume: 1,
             pitch: 1
         });
